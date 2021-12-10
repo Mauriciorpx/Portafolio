@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=VT323&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Mono', monospace;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #111;
+    color: aliceblue;
+    font-family: 'VT323', monospace;
+}
+
+.logo{
+    font-size: 2rem;
+    
+}
+
+.menu-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+    background-color: #111; 
+    box-shadow: 0px 3px 0px rgb(54, 53, 53);
+    /* Cambiar en escritorio */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 0;
+}
+
+.enlaces-menu li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.enlaces-menu li{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 92vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* display: none; */
+}
+
+.ham{
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+.ham span{
+    display: block;
+    background-color: #f3f3f3;
+    width: 28px;
+    height: 3px;
+    margin: 10px auto;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+@media screen and (min-width: 768px) {
+    .ham{
+        display: none; 
+    }
+    .menu-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        min-height: 8vh;
+        background-color: #111; 
+        box-shadow: 3px 3px 3px rgb(54, 53, 53);
+        flex-direction: row;
+        
+    }
+    .enlaces-menu{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        overflow: hidden;
+    }
+    .enlaces-menu li{
+        padding: 0 40px;
+        list-style-type: none;
+        transition: border-bottom 0.5s;
+}
+    .enlaces-menu li{
+        
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.5s;
+}
+    .enlaces-menu li:hover{
+        border-bottom: 1px solid #a162e8;
+    }
+}
+
+
+
+
+
+.texto-degradado{
+    background: linear-gradient(271deg,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin: 0;
+    
+}
+
+
+
+div h1{
+    position: relative;
+    font-weight: bold;
+    border-right: 1px solid aliceblue;
+
+    /*conwidth1chmuestraunsolocaracter,con2,muestra2...Buscamosvalorinicial0paraocultareltexto*/
+    width: 44ch;
+    overflow: hidden;
+    /*Comosevenlostextoscuandonosealcanzanavercompletos*//*nowrapevitaquesemuestreenvariaslineas*/
+    white-space: nowrap;
+    /*Seagregalaanumacioncreadaenelkeyframes*/
+    animation: textMachine 5s steps(44) , cursor 0.5s step-end infinite alternate;
+    /* Steps fragmenta la animacion en pasos */    
+    -webkit-animation: textMachine 5s steps(44);
+}
+
+
+
+section .proyectos{
+    margin-top: 100px;
+}
+
+div .hero{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
+
+
+/* Los keyframe van hasta el final */
+
+/* Abreviacion para animation
+
+nombreanimacion tiempo timing-function(en caso de haber) delay count direction
+
+*/
+
+@keyframes textMachine {
+    /* Se establecen los porcentajes (tiempo) donde se visualizarán las animaciones */
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 44ch;
+    }
+}
+
+@keyframes cursor {
+    50%{
+        border-color: transparent;
+    }
+}
