@@ -11,6 +11,7 @@ body {
   background-color: #111;
   padding-left: 20px;
   padding-right: 20px;
+  
 }
 
 header {
@@ -38,6 +39,11 @@ h2, h3, h4{
   justify-content: space-around;
   align-items: center;
   padding: 0 24px;
+  position: fixed;
+  top: 0;
+  background-color: #111;
+  width: 100%;
+  z-index: 1;
 }
 
 .nav-menu {
@@ -107,6 +113,7 @@ h2, h3, h4{
   border-bottom: 2px solid #191919;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 70px;
   
 }
 
