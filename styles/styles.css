@@ -44,6 +44,9 @@ h2, h3, h4{
   background-color: #111;
   width: 100%;
   z-index: 1;
+  /* border-bottom: 1px solid;
+  box-shadow: 5px 5px 5px #3b3a3a; */
+
 }
 
 .nav-menu {
