@@ -1,187 +1,388 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=VT323&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans Mono', monospace;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Mono", monospace;
+}
+
+body {
+  background-color: #111;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header {
+  background-color: #111;
+}
+
+li {
+  list-style: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+h2, h3, h4{
+  color: aliceblue; 
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-link {
+  transition: 0.7 ease;
+  -webkit-transition: 0.7 ease;
+  -moz-transition: 0.7 ease;
+  -ms-transition: 0.7 ease;
+  -o-transition: 0.7 ease;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid #a162e8;
+  
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  background-color: aliceblue;
 }
 
 
 
 
-body{
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    line-height: 1.6;
-    background-color: #111;
-    color: aliceblue;
-    font-family: 'VT323', monospace;
+.texto-degradado {
+  background: linear-gradient(
+    271deg,
+    #a0e9ff 30%,
+    #a162e8 50%,
+    #f093b0 70%,
+    #edca85 94%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin: 0;
 }
 
-.logo{
-    font-size: 2rem;
-    
+.hero{
+  margin-top: 20px;
+  display: flex;
+  max-width: 90%;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #191919;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
-.menu-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    min-height: 8vh;
-    background-color: #111; 
-    box-shadow: 0px 3px 0px rgb(54, 53, 53);
-    /* Cambiar en escritorio */
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 25px 0;
+.hero h1{
+  text-align: left;
 }
 
-.enlaces-menu li a{
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: aliceblue;
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-}
-.enlaces-menu li{
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 92vh;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    /* display: none; */
-}
-
-.ham{
-    cursor: pointer;
-    border: none;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    display: block;
-    position: absolute;
-    top: 15px;
-    right: 25px;
-}
-
-.ham span{
-    display: block;
-    background-color: #f3f3f3;
-    width: 28px;
-    height: 3px;
-    margin: 10px auto;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-}
-
-@media screen and (min-width: 768px) {
-    .ham{
-        display: none; 
-    }
-    .menu-content{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        min-height: 8vh;
-        background-color: #111; 
-        box-shadow: 3px 3px 3px rgb(54, 53, 53);
-        flex-direction: row;
-        
-    }
-    .enlaces-menu{
-        display: flex;
-        flex-direction: row;
-        height: auto;
-        overflow: hidden;
-    }
-    .enlaces-menu li{
-        padding: 0 40px;
-        list-style-type: none;
-        transition: border-bottom 0.5s;
-}
-    .enlaces-menu li{
-        
-        border-bottom: 1px solid transparent;
-        transition: border-bottom 0.5s;
-}
-    .enlaces-menu li:hover{
-        border-bottom: 1px solid #a162e8;
-    }
+.technologies{
+  display: flex;
+  justify-content: left;
+  
 }
 
 
 
+.technologies i{
+  font-size: 3rem;
+  padding-right: 20px;
+  color: aliceblue;
+  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out;
+  -ms-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+}
 
+.fa-html5:hover{
+  color: chocolate;
+  cursor: pointer;
+}
 
-.texto-degradado{
-    background: linear-gradient(271deg,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    margin: 0;
-    
+.fa-css3-alt:hover{
+  color: rgb(13, 82, 172);
+  cursor: pointer;
+}
+
+.fa-js-square:hover{
+  color: rgb(212, 163, 39);
+  cursor: pointer;
+}
+
+.presentacion{
+  width: 44%;
+  margin-right: 20px;
+  
+}
+
+.img-presentation{
+  background-color: #191919;
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 
-
-div h1{
-    position: relative;
+.img-presentation h3{
+    padding-top: auto;
+    /* position: relative; */
     font-weight: bold;
     border-right: 1px solid aliceblue;
-
     /*conwidth1chmuestraunsolocaracter,con2,muestra2...Buscamosvalorinicial0paraocultareltexto*/
-    width: 44ch;
+    width: 26ch;
     overflow: hidden;
     /*Comosevenlostextoscuandonosealcanzanavercompletos*//*nowrapevitaquesemuestreenvariaslineas*/
     white-space: nowrap;
     /*Seagregalaanumacioncreadaenelkeyframes*/
-    animation: textMachine 5s steps(44) , cursor 0.5s step-end infinite alternate;
-    /* Steps fragmenta la animacion en pasos */    
-    -webkit-animation: textMachine 5s steps(44);
-}
-
-
-
-section .proyectos{
-    margin-top: 100px;
-}
-
-div .hero{
-    display: flex;
-    flex-wrap: nowrap;
+    animation: textMachine 5s steps(26) , cursor 0.5s step-end infinite alternate;
+    /*Stepsfragmentalaanimacionenpasos*/
+    -webkit-animation: textMachine 5s steps(26);
+    -webkit-animation: textMachine 5s steps(26) , cursor 0.5s step-end infinite alternate;
 }
 
 
 
 
+.projects-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  list-style-type: none;
+  
+}
 
-/* Los keyframe van hasta el final */
+.projects-links{
+  height: 30%;
+  width: 30%;
+  background-color: #191919;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 5px;
+  margin-bottom: 20px;
+  transition: transform 0.5s, opacity 0.5s;
+  -webkit-transition: transform 0.5s, opacity 0.5s;
+  -moz-transition: transform 0.5s, opacity 0.5s;
+  -ms-transition: transform 0.5s, opacity 0.5s;
+  -o-transition: transform 0.5s, opacity 0.5s;
+}
 
-/* Abreviacion para animation
 
-nombreanimacion tiempo timing-function(en caso de haber) delay count direction
+.projects-links:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 
-*/
+}
+
+.projects-list img{
+  display: block;
+  width: 100%;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  filter: grayscale();
+  -webkit-filter: grayscale();
+}
+
+.projects-list img:hover{
+  filter: none;
+  -webkit-filter: none;
+}
+
+.projects{
+  border-bottom: 2px solid #191919;
+}
+
+.contact{
+  margin-top: 20px;
+}
+
+.contact section h1{
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.contact section h3{
+  text-align: center;
+  
+}
+
+
+
+.social-media{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  
+}
+
+ul.social-media i{
+  font-size: 2rem;
+  transition: 0.5s, all ease-in-out;
+  -webkit-transition: 0.5s all ease-in-out;
+  -moz-transition: 0.5s, all ease-in-out;
+  -ms-transition: 0.5s, all ease-in-out;
+  -o-transition: 0.5s, all ease-in-out;
+}
+
+ul.social-media i:hover{
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(161,98,232,1) 36%, rgba(0,212,255,1) 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin: 0;
+  
+}
+
+
+/* Media query */
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -moz-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -moz-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #111;
+    text-align: center;
+    width: 100%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .hero{
+    flex-direction: column;
+  }
+  div .presentacion{
+    /* max-width: 100%; */
+    box-sizing: border-box;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  div .img-presentation{
+    width: 88%;
+    height: 30vh;
+  }
+
+
+
+  .projects-links{
+    width: 45%;
+  }
+
+  .contact section h1{
+    text-align: center;
+    font-size: 1.5rem;
+    
+  }
+
+  .contact section h3{
+    text-align: center;
+    font-size: .9rem;
+    
+  }
+
+}
+
+/* Fin MQ */
 
 @keyframes textMachine {
-    /* Se establecen los porcentajes (tiempo) donde se visualizarán las animaciones */
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 44ch;
-    }
+  /* Se establecen los porcentajes (tiempo) donde se visualizarán las animaciones */
+  0%{
+      width: 0;
+  }
+  100%{
+      width: 26ch;
+  }
 }
 
 @keyframes cursor {
-    50%{
-        border-color: transparent;
-    }
+  50%{
+      border-color: transparent;
+  }
 }

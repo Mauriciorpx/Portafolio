@@ -4,51 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mauricio Develop</title>
+    <title>Mauricio Developer</title>
     <link rel="stylesheet" href="styles/styles.css">
     <script src="https://kit.fontawesome.com/0e84c117fa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="nav-Menu">
-        <nav class="menu-content">
-            <span class="logo">
-                <i class="fas fa-laptop-code"></i>
-            </span>           
-            <ul class="enlaces-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-branding">DEV.</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
             </ul>
-            <button class="ham" type="button">
-                <span class="br-1"></span>
-                <span class="br-2"></span>
-                <span class="br-3"></span>
-            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
-        <!-- <span class="btn-menu">
-            <i class="fas fa-bars"></i>
-        </span> -->
     </header>
     
     <main>
         <div class="hero">
-            <div class="presentacion"><h1 class="texto-degradado">Hello, I´m Mauricio, Front-end web developer</h1></div>
-            <i class="fas fa-laptop-code"></i>
+            <div class="presentacion"><h1 class="texto-degradado">Hello, I´m Mauricio, Front-end web developer</h1>
+                <h3>With knowledge in SQL databases (PostsgreSQL) and agile methodologies (SCRUM).</h3>
+                <ul class="technologies">
+                    <li class="html5"><i class="fab fa-html5"></i></li>
+                    <li class="css"><i class="fab fa-css3-alt"></i></li>
+                    <li class="jsIcon"><i class="fab fa-js-square"></i></li>
+                </ul>
+            </div>
+            <div class="img-presentation">
+                <h3>console.log("Hello world")</h3>
+                
+            </div>
+            
+            
         </div>
 
         
     </main>
     
-    <section class="proyectos">
-        <article>
-            <h2>Proyectos</h2>
-            <div>Proyecto1</div>
-            <div>proyecto2</div>
-        </article>
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <ul class="projects-list">
+            <li class="projects-links agency">
+                <h4>Travel Agency</h4>
+                <a href="sites/Tribeca - Proyecto/index.html" target="_blanc"><img src="img/Agency.jpg" alt="tribeca"></a>
+            </li>
+            <li class="projects-links seminar">
+                <h4>Web Seminar</h4>
+                <a href="sites/Seminario Web/index.html" target="_blanc"><img src="img/Seminary.jpg" alt=""></a>
+            </li>
+            <li class="projects-links blog">
+                <h4>In process (Blog)</h4>
+                <a href="sites/Blog Juliana/index.html" target="_blanc"><img src="img/Blog-Juliana.jpg" alt=""></a>
+            </li>
+            <li class="projects-links coming-soon">
+                <a href="#"><img src="img/coming-soon-gb0752b1c2_1280.jpg" alt=""></a>
+            </li>
+        </ul>
     </section>
-    <footer>
-        <h3>Contacto</h3>
+    <footer class="contact">
+        <section>
+            <h1 class="texto-degradado">I'm also open to freelance opportunities.</h1>
+            <h3>Do you have an exciting idea or project and need help?</h3>
+            <h3>CONTACT ME!</h3>
+            <h3><i class="fas fa-mail-bulk"></i> mauricio3741@gmail.com</h3>
+            <h3><i class="fas fa-mobile-alt">+57-301-373-97-06</i>
+                <i class="fab fa-whatsapp-square"></i></h3>
+            <ul class="social-media">
+                <li><a href="https://www.linkedin.com/in/mauricio-r%C3%ADos-pe%C3%B1a-84379b173/" target="_blanc">
+                    <i class="fab fa-linkedin"></i>
+                </a></li>
+                <li><a href="https://twitter.com/mauriciorpx" target="_blanc">
+                    <i class="fab fa-twitter-square"></i>
+                </a></li>
+                <li><a href="https://www.instagram.com/mauriciorpx/" target="_blanc">
+                    <i class="fab fa-instagram-square"></i>
+                </a></li>
+                
+            </ul>
+        </section>
+        
+
+        
     </footer>
 
 
@@ -56,9 +103,7 @@
 
         
     
-    <header>
-        
-    </header>
+    
     <script src="js/main.js"></script>
     
 </body>

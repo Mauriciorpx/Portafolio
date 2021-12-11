@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribeca</title>
+    <!-- Elimina configuraciones de los navegadores -->
+    <link rel="stylesheet" href="vendors/css/reset.css">
+    <!-- css responsive -->
+    <link rel="stylesheet" href="vendors/css/Grid.css">
+    <!-- css del proyecto -->
+    <link rel="stylesheet" href="Recursos/css/style.css">
+
+    <link rel="stylesheet" href="Recursos/css/mqueries.css">
+    <!-- Fuente a usar, obtenido de google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Fuentes para iconos -->
+    <script src="https://kit.fontawesome.com/0e84c117fa.js" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="titulo-box">
+
+            <h1>Encuentra inmuebles en <br> venta y en arriendo</h1>
+            <!-- Clase btn y subclases -->
+            <a href="#" class="btn btn-completo">Publica</a>
+            <a href="#" class="btn btn-transparente">Encuentra</a>
+
+        </div>
+        <!-- nav es un div con nombre guarda los links que permiten -->
+        <!-- interactuar a travez de la pagina -->
+        <nav>
+
+            <img class="logo" src="Recursos/imagenes/tribeca.png" alt="logo-tribeca">
+
+            <!-- ul permite crear listas con puntos -->
+            <!-- ol: lista organizada, numeros -->
+            <ul class="nav-principal">
+                <!-- li: crea un link -->
+                <li><a href="#">Inmuebles</a></li>
+                <li><a href="#">Locales</a></li>
+                <li><a href="#">Proyectos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- ***********************
+       Seccion caracteristicas
+    **************************** -->
+
+    <section class="caracteristicas">
+
+        <div class="c-container">
+
+            <h2>Herramientas Tribeca</h2>
+            <p class="c-paragrafo">Estas son las ventajas de trabajar con nosotros.</p>
+            <div class="c-info">
+                <!-- col se encuentra en el archivo css Grid -->
+                <!-- al igual span-1-of-4 -->
+                <div class="col span-1-of-4">
+                    <i class="fas fa-home"></i>
+                    <h3>CONSIGNA TU PROPIEDAD</h3>
+                    <p>Garantiza el pago a tiempo de arriendos, compraventas, servicios públicos y posibles datos, según
+                        sea
+                        tu caso, con un agente inmobiliario.</p>
+                </div>
+
+                <div class="col span-1-of-4">
+                    <i class="fas fa-search-dollar"></i>
+                    <h3>¿QUE ESTÁS BUSCANDO?</h3>
+                    <p>Déjanos ayudarte. consigue rápidamente tu cliente y asesórate en el cierre y legalización del
+                        negocio.</p>
+                </div>
+
+                <div class="col span-1-of-4">
+                    <i class="fas fa-calculator"></i>
+                    <h3>SEGURO DE ARRIENDO</h3>
+                    <p>Calcula cuanto debes pagar por asegurar tu inmueble. Seguro de arriendo Disponible. Ahorrarás
+                        tiempo
+                        y dinero.</p>
+                </div>
+
+                <div class="col span-1-of-4">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>CALCULA TU CRÉDITO</h3>
+                    <p>En nuestro simulador de crédito puedes calcular cuánto te puede prestar un banco para la compra
+                        de tu
+                        apartamento o casa.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+ <!-- ***********************
+       Seccion viviendas destacadas
+    **************************** -->
+
+    <section class="vivienda-destacada">
+
+        <h2>Viviendas Destacadas</h2>
+
+        <div class="foto-casas">
+            <!-- Es mas facil mostrar elemenos consecutivos con una organizacion ul -->
+            <ul class="f-contenedor">
+                <!-- El enlace sin el href para que no quede enlazado a ningun sitio -->
+                <li><a> <img src="Recursos/imagenes/Destacadas/casa1.jpg" alt="Casa Brooklyn"></a></li>
+                <li><a> <img src="Recursos/imagenes/Destacadas/casa2.jpg" alt="Casa Modelo Cartagena"></a></li>
+                <li><a> <img src="Recursos/imagenes/Destacadas/casa3.jpg" alt="Casa Modelo Ciudad de México"></a></li>
+                <li><a> <img src="Recursos/imagenes/Destacadas/casa4.jpg" alt="Casa Modelo Vancouver"></a></li>
+
+            </ul>
+
+            <ul class="f-contenedor">
+                <!-- El enlace sin el href para que no quede enlazado a ningun sitio -->
+                <li><a> <img src="Recursos/imagenes/Destacadas/casa5.jpg" alt="Casa Modelo Madrid"></a></li>
+                <li><a> <img src="Recursos/imagenes/Destacadas/casa6.jpg" alt="Casa Modelo New York"></a></li>
+                <li><a> <img src="Recursos/imagenes/Destacadas/casa7.jpg" alt="Casa Modelo Lima"></a></li>
+                <li><a> <img src="Recursos/imagenes/Destacadas/casa8.jpg" alt="Casa Modelo Paris"></a></li>
+
+            </ul>
+
+
+        </div>
+
+
+
+
+
+
+    </section>
+
+ <!-- ***********************
+       Seccion Registra
+    **************************** -->
+
+    <section class="registra">
+
+        <h2>Registra tu inmueble</h2>
+
+        <div class="registra-contenedor">
+
+            <div class="col span-1-of-2">
+
+                <img src="Recursos/imagenes/Celular/mockup cellphone-light.png" alt="tribeca en celular">
+
+            </div>
+
+            <div class="col span-1-of-2">
+
+                <h3>Pasos</h3>
+                <p><i class="fas fa-mobile-alt"></i>Utiliza tu Smartphone</p>
+                <p><i class="far fa-images"></i>Toma 10 Fotos</p>
+                <p><i class="fas fa-video"></i>Agrega 2 videos</p>
+                <p><i class="fas fa-comment-alt"></i>Escribe una breve reseña</p>
+
+                <a class="btn btn-completo">Registrar</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+ <!-- ***********************
+       Seccion ciudades
+    **************************** -->
+
+    <section class="ciudad">
+
+        <h2>Proyectos por ciudad</h2>
+        <div class="ciudad-container">
+
+            <ul>
+                <li class="cuartos"><a><img src="Recursos/imagenes/Ciudades/Ciudad de Mexico.jpg" alt="Mexico"></a></li>
+                <li class="cuartos"><a><img src="Recursos/imagenes/Ciudades/Almudena.jpg" alt="Madrid"></a></li>
+                <li class="cuartos"><a><img src="Recursos/imagenes/Ciudades/Bogota.jpg" alt="Bogota"></a></li>
+                <li class="cuartos"><a><img src="Recursos/imagenes/Ciudades/Vancouver.jpg" alt="Vancouver"></a></li>
+            </ul>
+
+            <ul>
+                <div class="cuartos">
+
+                    <h3>Mexico</h3>
+                    <div class="informacion-adicional">
+                        <p><i class="fas fa-building"></i> 2.400 proyectos</p>
+                        <p><i class="fas fa-users"></i> 16.500 clientes</p>
+                        <p><i class="fas fa-hand-holding-usd"></i> 50.000 proyectos Vendidos</p>
+
+                    </div>
+                </div>
+
+                <div class="cuartos">
+                    <h3>Madrid</h3>
+                    <div class="informacion-adicional">
+                        <p><i class="fas fa-building"></i>1.250 proyectos</p>
+                        <p><i class="fas fa-users"></i>6.500 clientes</p>
+                        <p><i class="fas fa-hand-holding-usd"></i>5.200 proyectos Vendidos</p>
+
+                    </div>
+                </div>
+
+                <div class="cuartos">
+                    <h3>Bogota</h3>
+                    <div class="informacion-adicional">
+                        <p><i class="fas fa-building"></i>8.400 proyectos</p>
+                        <p><i class="fas fa-users"></i>26.500 clientes</p>
+                        <p><i class="fas fa-hand-holding-usd"></i>35.150 proyectos Vendidos</p>
+
+                    </div>
+                </div>
+
+                <div class="cuartos">
+                    <h3>Vancouver</h3>
+                    <div class="informacion-adicional">
+                        <p><i class="fas fa-building"></i>400 proyectos</p>
+                        <p><i class="fas fa-users"></i>1.500 clientes</p>
+                        <p><i class="fas fa-hand-holding-usd"></i>2.200 proyectos Vendidos</p>
+
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <section class="plan">
+
+        <h2>Escoge tu plan</h2>
+
+        <div class="plan-contenedor">
+
+            <div class="modulo-plan">
+
+                <div class="plan-titulo">
+                    <p>Quincenal</p>
+                    <h3>$30</h3>
+                </div>
+                <div class="plan-cuerpo">
+                    <p><i class="fas fa-star"></i>Publica durante 15 dias</p>
+                    <p><i class="fas fa-star"></i>Recibe pre-alertas</p>
+                    <p><i class="fas fa-star"></i>2$ costo diario</p>
+                    <br>
+                    <a href="#" class="btn btn-transparente"> Publica</a>
+                </div>
+
+            </div>
+
+            <div class="modulo-plan">
+
+                <div class="plan-titulo">
+                    <p>Mas vendido</p>
+                    <h3>$50</h3>
+                </div>
+                <div class="plan-cuerpo">
+                    <p><i class="fas fa-star"></i>Publica durante 30 dias</p>
+                    <p><i class="fas fa-star"></i>Recibe pre-alertas</p>
+                    <p><i class="fas fa-star"></i>Administra tus contactos</p>
+                    <p><i class="fas fa-star"></i>$1.6 costo diario</p>
+                    <br>
+                    <a href="#" class="btn btn-completo"> Publica</a>
+                </div>
+
+            </div>
+
+            <div class="modulo-plan">
+
+                <div class="plan-titulo">
+                    <p>Semanal</p>
+                    <h3>$21</h3>
+                </div>
+                <div class="plan-cuerpo">
+                    <p><i class="fas fa-star"></i>Publica durante 7 dias</p>
+                    <p><i class="fas fa-star"></i>Recibe pre-alertas</p>
+                    <p><i class="fas fa-star"></i>$3 costo diario</p>
+                    <br>
+                    <a href="#" class="btn btn-transparente"> Publica</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="politicas">
+
+            <ul>
+
+                <li><a>POLITICAS Y TERMINOS</a></li>
+                <li><a>AVISO DE PRIVACIDAD</a></li>
+                <li><a>POLITICA DATOS DE NAVEGACION</a></li>
+                <li><a>LINEA ETICA</a></li>
+                <li><a>QUEJAS Y RECLAMOS</a></li>
+                <li><a>AYUDA</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="socios">
+
+            <img src="Recursos/imagenes/tribeca.png" alt="logo-tribeca">
+            <img src="Recursos/imagenes/Logos footer/Real-Estate-Logo-1.png" alt="logo-real">
+            <img src="Recursos/imagenes/Logos footer/design-real-estate.png" alt="logo-compañia socia">
+
+        </div>
+
+        <div class="social-media">
+
+            <h4>Siguenos en:</h4>
+
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-google-plus-g"></i>
+
+        </div>
+
+
+    </footer>
+
+
+</body>
+
+</html>
