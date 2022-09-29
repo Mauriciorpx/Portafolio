@@ -112,11 +112,11 @@ h2, h3, h4{
   display: flex;
   max-width: 90%;
   padding-bottom: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   border-bottom: 2px solid #191919;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 70px;
+  padding-top: 40px;
   
 }
 
@@ -126,10 +126,18 @@ h2, h3, h4{
 
 .technologies{
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  border-bottom: 2px solid #191919;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  
   
 }
 
+.skills h2{
+  text-align: center;
+  margin-bottom: 8px;
+}
 
 
 .technologies i{
@@ -158,10 +166,21 @@ h2, h3, h4{
   cursor: pointer;
 }
 
+.fa-react:hover{
+  color: aqua;
+  cursor: pointer;
+}
+
+
 .presentacion{
   width: 44%;
   margin-right: 20px;
   
+}
+
+.fa-git-alt:hover{
+  color: rgb(230, 78, 78);
+  cursor: pointer;
 }
 
 .img-presentation{
@@ -359,10 +378,11 @@ ul.social-media i:hover{
     height: 30vh;
   }
 
+  
 
 
   .projects-links{
-    width: 45%;
+    width: 60%;
   }
 
   .contact section h1{
@@ -376,6 +396,12 @@ ul.social-media i:hover{
     font-size: .9rem;
     
   }
+
+  .projects-list{
+    flex-direction: column;
+    align-items: center;
+  }
+  
 
 }
 
